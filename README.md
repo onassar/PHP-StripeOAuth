@@ -4,7 +4,7 @@ PHP-StripeOAuth
 PHP library which helps perform an OAuth2 flow for Stripe, which is used when creating and interacting with a Stripe application.
 
 ### Why I made this
-In using the Stripe API, which I'll advocate as the most thought-out API I've used as a developer, I found one thing specifically lacking.
+While integration the Stripe API (for our new payment flow at [Skillshare](http://www.skillshare.com/?on)), I found one thing specifically lacking.
 
 That was, a way to initiate an OAuth flow for a [Stripe Application](https://stripe.com/docs/connect), and to access needed data, in PHP.
 
