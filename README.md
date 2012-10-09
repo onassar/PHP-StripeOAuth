@@ -1,7 +1,7 @@
 PHP-StripeOAuth
 ===============
 
-PHP library which helps perform an OAuth2 flow for [Stripe](https://stripe.com/), which is used when creating and interacting with a Stripe application.
+PHP library which helps perform an [OAuth2](http://oauth.net/2/) flow for [Stripe](https://stripe.com/), which is used when creating and interacting with a Stripe application.
 
 ### Why I made this
 While integration the Stripe API (for our new payment flow at [Skillshare](http://www.skillshare.com/?on)), I found one thing specifically lacking.
