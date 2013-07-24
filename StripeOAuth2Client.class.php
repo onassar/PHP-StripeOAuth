@@ -49,15 +49,23 @@
          * store the last-made request locally.
          * 
          * @access public
+         * @param  string $path
+         * @param  string $method (default: 'GET')
+         * @param  array $params (default: Array)
+         * @param  mixed $ch (default: NULL)
          * @return String
          */
-    	protected function makeRequest()
-    	{
-    	   $args = func_get_args();
-    	   $body = call_user_func_array(array('parent', 'makeRequest'), $args);
-    	   $this->_last = $body;
-    	   return $body;
-    	}
+        protected function makeRequest(
+            $path,
+            $method = 'GET',
+            $params = Array,
+            $ch = NULL
+        ) {
+           $args = func_get_args();
+           $body = call_user_func_array(array('parent', 'makeRequest'), $args);
+           $this->_last = $body;
+           return $body;
+        }
 
         /**
          * getLastResponse
@@ -67,8 +75,8 @@
          * @access public
          * @return String
          */
-    	public function getLastResponse()
-    	{
-    	   return $this->_last;
-    	}
+        public function getLastResponse()
+        {
+           return $this->_last;
+        }
     }
