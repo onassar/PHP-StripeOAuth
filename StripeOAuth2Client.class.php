@@ -58,7 +58,7 @@
         protected function makeRequest(
             $path,
             $method = 'GET',
-            $params = Array,
+            $params = Array(),
             $ch = NULL
         ) {
            $args = func_get_args();
