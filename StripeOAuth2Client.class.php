@@ -37,7 +37,7 @@
          * The last response make, in raw form (eg. not json encoded, or
          * anything).
          * 
-         * @var    String
+         * @var    string
          * @access private
          */
         private $_last;
@@ -53,7 +53,7 @@
          * @param  string $method (default: 'GET')
          * @param  array $params (default: Array)
          * @param  mixed $ch (default: NULL)
-         * @return String
+         * @return string
          */
         protected function makeRequest(
             $path,
@@ -73,7 +73,7 @@
          * Getter for the last response made.
          * 
          * @access public
-         * @return String
+         * @return string
          */
         public function getLastResponse()
         {

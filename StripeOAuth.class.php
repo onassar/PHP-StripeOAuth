@@ -48,7 +48,7 @@
          * doesn't seem to generally provide access to this, so it's extended
          * through the <StripeOAuth2Client> class to provide that helper.
          * 
-         * @var    String
+         * @var    string
          * @access private
          */
         private $_body;
@@ -70,7 +70,7 @@
          * The Client ID of the Stripe application that is initiating the OAuth2
          * connection.
          * 
-         * @var    String
+         * @var    string
          * @access private
          */
         private $_cid;
@@ -80,7 +80,7 @@
          * 
          * The URI endpoints for the Stripe connection flow.
          * 
-         * @var    Array
+         * @var    array
          * @access private
          */
         private $_endpoints = array(
@@ -95,7 +95,7 @@
          * The secret key of the account that the application was registered
          * under.
          * 
-         * @var    String
+         * @var    string
          * @access private
          */
         private $_secret;
@@ -106,7 +106,7 @@
          * An array of tokens (access and refresh) that were retrieved in the
          * connection flow.
          * 
-         * @var    Array (default: array());
+         * @var    array (default: array());
          * @access private
          */
         private $_tokens = array();
